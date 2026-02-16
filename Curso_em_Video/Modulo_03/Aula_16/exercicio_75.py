@@ -6,17 +6,17 @@
 '''
 while True:
     try:
-        n1 = int(input('Digite o primeiro valor: '))
-        n2 = int(input('Digite o segundo valor: '))
-        n3 = int(input('Digite o terceiro valor: '))
-        n4 = int(input('Digite o quarto valor: '))
-        valores_recolhidos = n1, n2, n3, n4
-        print(valores_recolhidos)
+        valores = []
+        for p in range(1, 5): # o priemiro número marca o inicio do indice e o segunda e a quantidades de "voltas" que o loop deve dar
+            valor = int(input(f'{p}° valor: '))
+            valores.append(valor)
+
+        print(valores)
         print('------------------------------------')
-        print (f'1|Quantas vezes aparece o valor 9: {valores_recolhidos.count(9)}')
-        print (f'2|Em que posição foi digitado o primeiro valor 3: {valores_recolhidos.index(3)}')
+        print (f'1|Quantas vezes aparece o valor 9: {valores.count(9)}')
+        print (f'2|Em que posição foi digitado o primeiro valor 3: {valores.index(3)}')
         par = []
-        for n in valores_recolhidos:
+        for n in valores:
             if n % 2 == 0:
                 par.append(n)
         print (f'3|Quais foram os números pares: {par}')
