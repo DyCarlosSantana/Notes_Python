@@ -40,7 +40,7 @@ pessoa = ('Carlos', 22, 'M', 95.50)
 
 '''
 Lista de Exercicios
-    72 - Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, e zero até vinte. Seu programa deverá ler um núemro pelo techado (entre 0 e 20) e mostra-lo por entenso;
+    72 - Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, e zero até vinte. Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostra-lo por entenso;
     
     73 - Crie uma tupla preenchida com os vinte primeiros colocados da tabela do comapeonato brasileiro de futebol, na ordem de colocação. Depois mostre:
         a) Apenas os 5 primeiros colocados;
