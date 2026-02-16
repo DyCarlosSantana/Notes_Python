@@ -1,8 +1,21 @@
 '''
-    72 - Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, e zero até vinte. Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostra-lo por entenso;
+    74 - Crie uma tupla preenchida com os vinte primeiros colocados da tabela do comapeonato brasileiro de futebol, na ordem de colocação. Depois mostre:
+        a) Apenas os 5 primeiros colocados;
+        b) Os últimos 4 colocados da tabela;
+        c) Uma lista com os times em ordem alfabetica;
+        d) Em que posição na tabela o time da Chapecoense.
 '''
-numeros_extenso = ('zero', 'um', 'dois', 'três', 'quadro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
+colocados_brasileirao_2025 = (
+    "Flamengo", "Palmeiras", "Cruzeiro", "Mirassol", "Fluminense",
+    "Botafogo", "Bahia", "São Paulo", "Grêmio", "Red Bull Bragantino", "Atlético Mineiro", "Santos", "Corinthians", "Vasco da Gama", "Vitória", "Internacional", "Ceará", "Fortaleza", "Juventude", "Sport")
 
-num_usuario = int(input('Digite um número: '))
+print(f'Os vinte colocados do brasileirão 2025: {colocados_brasileirao_2025}')
 
-print(f'Você digitou o número {numeros_extenso[num_usuario]}')
+print(f'Os primeiros cinco colocados: {colocados_brasileirao_2025[0:5]}')
+print(f'Os útimos 4 colocados: {colocados_brasileirao_2025[16:20]}')
+print(f'Lista dos times em ordem alfabetica: {sorted(colocados_brasileirao_2025)}')
+try:
+    print(f'Posição na tabela o time Chapecoense: {colocados_brasileirao_2025.index("Chapecoense")}')
+except:
+    if "Chaepcoense" not in colocados_brasileirao_2025:
+        print('A posição não pode ser indentificada pois o time "Chapecoense" não esta no top 20 colocados')
