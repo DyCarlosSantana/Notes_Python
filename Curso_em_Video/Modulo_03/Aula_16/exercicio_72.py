@@ -9,7 +9,7 @@ while True:
             break
         print('Tente novamente! ', end='')
             
-    print(f'Você digitou o número {numeros_extenso[num_usuario]}')
+    print(f'Você digitou o número {numeros_extenso[num_usuario].upper()}')
     prosseguir = input('Encerrar [q], Continuar [Enter] -> ')
     if prosseguir == 'q' or 'Q':
         break
