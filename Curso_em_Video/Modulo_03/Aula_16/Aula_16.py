@@ -1,7 +1,6 @@
 # TUPLAS
 
 lanche = ('Hambúrguer', 'Suco', 'Pizza', 'Pudim') #Parenteses são opcionais
-
 '''
 print(lanche)
 print(lanche[1])
