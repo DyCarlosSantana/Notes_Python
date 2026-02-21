@@ -13,11 +13,10 @@ while True:
             par.append(num)
         else:
             impar.append(num)
-
-        sn = input('Deseja continuar: [S/N]-> ').upper()
-        if sn == 'N': 
+        resp = input('Deseja continuar: [S/N]-> ')
+        if resp in 'Nn': 
             break
-        elif sn == 'S':
+        elif resp in 'Ss':
             continue
     except:
         print(f'Tente Novamente!', end=' ')
