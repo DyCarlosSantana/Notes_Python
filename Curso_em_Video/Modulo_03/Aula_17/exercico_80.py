@@ -5,5 +5,15 @@ Dica do Cleitin: Este é um exercício de lógica pura (algoritmo de ordenação
 '''
 lista = []
 for i in range(1, 6):
-    num = int(input(f'Digite o {i}° número: '))
-    lista.append(num)
+    n = int(input(f'Digite o {i}° número: '))
+    if i == 0 or n > lista[len(lista)]: #ou [-1]
+        lista.append(n)
+    else:
+        pos = 0
+        while pos < len(lista):
+            if n <= lista[pos]:
+                lista.insert(pos, n)
+                break
+            pos += 1
+print('---'*10)
+print(lista)
