@@ -7,6 +7,15 @@ valores = []
 for i in range(1, 6):
     valores.append(int(input(f'Digite o {i}° valor: ')))
 
-print(f'Os valores digitados: {valores}')
-print(f'O maior valor é: {max(valores)}')
-print(f'O menor valor é: {min(valores)}')
+print(f'Você digitou os valores: {valores}')
+
+print(f'O maior valor é: {max(valores)} na posição ', end='')
+for i, v in enumerate(valores):
+    if v == max(valores):
+        print(f'{i}... ', end='')
+
+print(f'O menor valor é: {min(valores)} na posição ', end='')
+for i, v in enumerate(valores):
+    if v == min(valores):
+        print(f'{i}... ', end='')
+
