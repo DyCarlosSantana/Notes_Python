@@ -9,10 +9,10 @@ lista = []
 while True:
     try:
         lista.append(int(input('Digite um número: ')))
-        sn = input('Deseja continuar: [S/N]-> ').upper()
-        if sn == 'N': 
+        sn = input('Deseja continuar: [S/N]-> ')
+        if sn in 'Nn': 
             break
-        elif sn == 'S':
+        elif sn in 'Sn':
             continue
     except:
         print(f'Tente Novamente!', end=' ')
@@ -20,9 +20,9 @@ while True:
 print(f'Foram digitados {len(lista)} números;')
 
 lista.sort(reverse=True)
-print(f'Os números digitados forma: {lista}')
+print(f'Os números digitados em ordem decrescentes: {lista}')
 
 if 5 in lista:
     print('O número 5 faz parte da lista')
 else:
-    print('O número  não foi digitado')
+    print('O número 5 não foi digitado')
