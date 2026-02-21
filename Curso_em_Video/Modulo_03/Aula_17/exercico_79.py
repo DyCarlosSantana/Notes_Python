@@ -12,11 +12,14 @@ while True:
 
         if novo_valor not in valores:
             valores.append(novo_valor)
+            print('Valor adicionado!')
+        else:
+            print('Valor duplicado! Não foi adicionado')
 
-        sn = input('Deseja continuar [S/N]-> ').upper()
-        if sn == 'N':
+        sn = input('Deseja continuar [S/N]-> ')
+        if sn in 'Nn':
             break
-        elif sn == 'S':
+        elif sn in 'Ss':
             continue
 
     except:
