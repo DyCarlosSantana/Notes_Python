@@ -1,7 +1,7 @@
 import os
 
 # Defininfo o caminho
-diretorio = 'Aula_18'
+diretorio = 'Aula_18' #sempre alterar o diretorio para novos exercicios
 # Cria o diretorio/pasta caso não exista
 if not os.path.exists(diretorio):
     os.makedirs(diretorio)
