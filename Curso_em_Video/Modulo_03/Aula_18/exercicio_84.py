@@ -16,6 +16,15 @@ while True:
         pessoa.append(nome)
         peso = int(input("Peso: "))
         pessoa.append(peso)
+
+        if len(cadastros) == 0:
+            mais_pesado = mais_leve = pessoa[1]
+        else:
+            if pessoa[1] > mais_pesado:
+                mais_pesado = pessoa[1]
+            if pessoa[1] < mais_leve:
+                mais_leve = pessoa[1]
+
         cadastros.append(pessoa[:])
         pessoa.clear()
 
@@ -28,18 +37,8 @@ while True:
         print("Dado invalido! Tente novamente...")
 
 
-for pessoa in cadastros:
-    if pessoa[1] > 70:
-        mais_pesado.append(pessoa[:])
-    else:
-        mais_leve.append(pessoa[:])
+print(f"O maior peso é {mais_pesado}kg", end='')
 
-print(f"Mais pesados são ", end='')
-for mp in mais_pesado:
-    print(f"{mp[0]} com {mp[1]}Kg... ", end='')
-
-print(f"\nMais leve são ", end='')
-for ml in mais_leve:
-    print(f"{ml[0]} com {ml[1]}Kg... ", end='')
+print(f"\nO mais leve é {mais_leve}kg ", end='')
 
 print(f"\nForam cadastradas {len(cadastros)} pessoas")
