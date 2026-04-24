@@ -6,11 +6,11 @@ Dica do Cleitin: Vais precisar de uma lista que contém duas listas internas: [[
 lista_numeros = [[], []]
 
 for n in range(1, 8):
-    num = int(input(f"Digite o {n}° número: "))
-    if num % 2 == 0:
-        lista_numeros[0].append(num)
+    valor = int(input(f"Digite o {n}° número: "))
+    if valor % 2 == 0:
+        lista_numeros[0].append(valor)
     else:
-        lista_numeros[1].append(num)
+        lista_numeros[1].append(valor)
 
 print(f"Lista completa: {lista_numeros}")
 lista_numeros[0].sort()

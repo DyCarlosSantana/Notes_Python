@@ -37,8 +37,12 @@ while True:
         print("Dado invalido! Tente novamente...")
 
 
-print(f"O maior peso é {mais_pesado}kg", end='')
-
-print(f"\nO mais leve é {mais_leve}kg ", end='')
-
+print(f"O maior peso é {mais_pesado}kg. Peso de ", end='')
+for pessoa in cadastros:
+    if pessoa[1] == mais_pesado:
+        print(f"{pessoa[0]}")
+print(f"\nO mesor peso é {mais_leve}kg. Peso de ", end='')
+for pessoa in cadastros:
+    if pessoa[1] == mais_leve:
+        print(f"{pessoa[0]}")
 print(f"\nForam cadastradas {len(cadastros)} pessoas")

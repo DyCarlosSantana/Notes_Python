@@ -4,6 +4,7 @@ O que fazer: Faça um programa que ajude um jogador da Mega Sena a criar palpite
 """
 
 from random import randint
+from time import sleep
 
 jogos = []
 palpite = []
@@ -19,4 +20,5 @@ while cont <= qtd_jogos:
     cont += 1
         
 for index, palpite in enumerate(jogos):
-    print(f"{index}° - Palpite: {palpite}")
+    print(f"Jogo {index+1}: {palpite}")
+    sleep(1)
