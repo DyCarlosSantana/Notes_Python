@@ -5,18 +5,14 @@ notas = []
 aluno['Nome'] = str(input('Nome do Aluno: '))
 notas.append(float(input('1° Nota: ')))
 notas.append(float(input('2° Nota: ')))
-media = sum(notas) / 2
-
+media = sum(notas) / len(notas)
+aluno.update({'Notas': notas, 'Média': media})
 if media >= 7:
-    status = "Aprovado"
+    aluno['Status'] = "Aprovado"
 else:
-    status = "Reprovado"
-
-aluno['Notas'] = notas
-aluno['Media'] = media
-aluno['Status'] = status
+    aluno['Status'] = "Reprovado"
 
 for c, v in aluno.items():
     print(f'{c}: {v}')
 
-#Adicionei as caleta de duas notas, encapsuladas em uma lista (notas), e será exibida em conjunto com a média final, assim como a situação/status.
+#Adicionei as caleta de duas notas, encapsuladas em uma lista (notas), e será exibida em conjunto com a média final, assim como a situação/status

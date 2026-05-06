@@ -17,7 +17,7 @@ O que fazer: Crie um programa que leia nome, ano de nascimento e carteira de tra
 
 🔵 Exercício 93: Cadastro de Jogador de Futebol
 
-O que fazer: Crie um programa que gira o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de golos feitos em cada partida. Tudo isso será guardado num dicionário, incluindo o total de golos feitos durante o campeonato.
+O que fazer: Crie um programa que gira o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de gols feitos em cada partida. Tudo isso será guardado num dicionário, incluindo o total de gols feitos durante o campeonato.
 
 🟣 Exercício 94: Unindo Dicionários e Listas
 
