@@ -1,0 +1,40 @@
+Desafios de Programação: Aula 21 (Funções - Parte 2)
+
+Estes exercícios vão consolidar conceitos de retorno de dados, parâmetros opcionais e validação de inputs.
+
+🟢 Exercício 101: Funções para Votação
+
+O que fazer: Crie um programa que tenha uma função chamada voto(), que vai receber como parâmetro o ano de nascimento de uma pessoa, retornando um valor literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATÓRIO nas eleições.
+Dica do Cleitin: Importe o módulo datetime dentro da própria função para economizar memória (escopo local de importação).
+
+🟡 Exercício 102: Função para Fatorial
+
+O que fazer: Crie um programa que tenha uma função fatorial(), que receba dois parâmetros: o primeiro que indique o número a calcular e o outro chamado show, que será um valor lógico (opcional) indicando se será mostrado ou não no ecrã o processo de cálculo do fatorial.
+
+🔴 Exercício 103: Ficha do Jogador
+
+O que fazer: Faça um programa que tenha uma função chamada ficha(), que receba dois parâmetros opcionais: o nome de um jogador e quantos golos ele marcou. O programa deverá ser capaz de mostrar a ficha do jogador, mesmo que algum dado não tenha sido informado corretamente (se o nome estiver vazio, assuma <desconhecido>, se os golos estiverem vazios, assuma 0).
+
+🔵 Exercício 104: Validando Entrada de Dados
+
+O que fazer: Crie um programa que tenha uma função chamada leiaInt(), que vai funcionar de forma semelhante à função input() do Python, mas que faça a validação para aceitar apenas um valor numérico inteiro.
+Ex: n = leiaInt('Digite um número: ')
+
+🟣 Exercício 105: Analisando e Gerando Dicionários
+
+O que fazer: Faça um programa que tenha uma função notas(), que pode receber várias notas de alunos e vai retornar um dicionário com as seguintes informações:
+
+Quantidade de notas.
+
+A maior nota.
+
+A menor nota.
+
+A média da turma.
+
+A situação (opcional - Excelente/Boa/Razoável/Ruim).
+Adicione também as Docstrings da função para que outros programadores saibam como usá-la.
+
+🟠 Exercício 106: Sistema Interativo de Ajuda
+
+O que fazer: Faça um mini-sistema que utilize o Interactive Help do Python. O utilizador vai digitar o comando e o manual vai aparecer. Quando o utilizador digitar a palavra 'FIM', o programa se encerrará. Use cores para personalizar os menus e os fundos das respostas.

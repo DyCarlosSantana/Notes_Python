@@ -1,0 +1,21 @@
+Desafios de Programação: Aula 22 (Módulos e Pacotes)
+
+Estes desafios vão simular a evolução de um sistema real: tu vais criar um módulo básico e depois irás refatorá-lo (melhorá-lo) até transformá-lo num pacote robusto de utilidades.
+
+🟢 Exercício 107: Exercitando Módulos em Python
+O que fazer: Crie um módulo chamado moeda.py que tenha funções incorporadas aumentar(), diminuir(), dobro() e metade(). Faça também um programa que importe esse módulo e use algumas dessas funções.
+
+🟡 Exercício 108: Formatando Moedas em Python
+O que fazer: Adapte o código do desafio 107, criando uma função adicional chamada moeda() que consiga mostrar os números como um valor monetário formatado (ex: R$10,00).
+
+🔴 Exercício 109: Reduzindo ainda mais o seu Programa
+O que fazer: Modifique as funções que foram criadas no desafio 107 para que elas aceitem um parâmetro a mais, informando se o valor retornado por elas vai ser formatado ou não pela função moeda(), desenvolvida no desafio 108.
+
+🔵 Exercício 110: Reduzindo ainda mais o seu Programa (Parte 2)
+O que fazer: Adicione ao seu módulo moeda.py uma função chamada resumo(), que mostre no ecrã algumas informações básicas geradas pelas funções que já temos no módulo, analisando o valor inserido.
+
+🟣 Exercício 111: Transformando Módulos em Pacotes
+O que fazer: Crie um pacote chamado utilidadesCeV que tenha dois subpacotes internos chamados moeda e dado. Transfira todas as funções utilizadas nos desafios anteriores para o primeiro pacote e mantenha tudo a funcionar.
+
+🟠 Exercício 112: Entrada de Dados Monetários
+O que fazer: Dentro do pacote utilidadesCeV que criou no desafio 111, temos um subpacote chamado dado. Crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários (substituindo vírgula por ponto).
