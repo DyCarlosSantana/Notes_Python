@@ -18,3 +18,5 @@ def leiaInt(msg=''):
             print('ERRO: Digite um número valido!')
     
 leiaInt('Digite um número: ')
+
+# .isinstance(valor, classe) -> é um recurso nativo do Python usado para verificar se um objeto (como uma variável) pertence a uma classe, tipo ou a uma tupla de tipos específicos. Ela retorna True caso seja do tipo esperado e False caso contrário.
