@@ -1,3 +1,5 @@
+from rich import print
+
 class ContaBancaria:
     """
         Cria uma conta bancaria que permite fazer saques e depositos.
@@ -9,19 +11,18 @@ class ContaBancaria:
     
     def deposito(self, valor):
         self.saldo += valor
-        return (f"Deposito de R${valor:.2f} autorizado")
+        print (f"Deposito de R${valor:.2f} autorizado")
 
     def saque(self, valor):
         if valor <= self.saldo:
             self.saldo -= valor
-            return (f"Saque de R${valor:.2f} realizado")
+            print (f"Saque de R${valor:.2f} realizado")
         else:
-            return (f"Saque de R${valor:.2f} não autorizado, saldo insuficiente!")
+            print (f"Saque de R${valor:.2f} não autorizado, [red]saldo insuficiente![/red]")
 
     def __str__(self):
-        return f"A conta {self.id} de {self.titular} tem R${self.saldo:.2f} de saldo"
+        print (f"A conta {self.id} de {self.titular} tem R${self.saldo:.2f} de saldo")
 
 c1 = ContaBancaria(112, "Edy Carlos", 3000)
 c1.deposito(500)
-c1.saque(1500)
-print(c1)
+c1.saque(5000)

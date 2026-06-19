@@ -1,0 +1,43 @@
+🏆 Desafios de Programação: Aula 05 (Módulo de POO)
+Estes desafios foram propostos para testar e fixar a sua compreensão sobre a criação de classes, instanciação de objetos, manipulação de atributos de instância e de classe, e a lógica de métodos comportamentais.
+
+🟢 Desafio 16: Classe Funcionário (Introdução)
+O que fazer: Crie uma classe chamada Funcionario que represente um colaborador de uma empresa.
+O construtor deve inicializar os atributos de instância: nome, setor e cargo.
+Instancie pelo menos dois funcionários diferentes e mostre os seus dados na tela.
+
+🟡 Desafio 17: Etiqueta de Preço de Produtos
+O que fazer: Crie uma classe chamada Produto para gerenciar itens de uma loja.
+A classe deve receber o nome e o preco do produto no momento da criação.
+Crie um método chamado etiqueta_preco() que imprima uma etiqueta visualmente organizada com o nome do produto e o seu respectivo preço formatado.
+
+🔴 Desafio 18: Planejador de Churrasco
+O que fazer: Crie uma classe chamada Churrasco para calcular a logística de comida de um evento.
+A classe deve ter um atributo de classe chamado consumo_padrao (por exemplo, 400g de carne por pessoa).
+O construtor deve registrar a quantidade de pessoas convidadas.
+Crie um método chamado analisar() que calcule a quantidade total de carne necessária para o evento e exiba um resumo completo dos custos estimados.
+
+🔵 Desafio 19: Simulador de Leitura de Livro
+O que fazer: Crie uma classe chamada Livro que simule a leitura de uma obra.
+No construtor, defina o titulo, total_paginas e inicialize a pagina_atual em 0.
+Crie um método chamado avancar_pagina(qtd) que permita ao leitor avançar um número específico de páginas.
+O sistema deve validar os limites: não é possível avançar além do número total de páginas do livro. Se o leitor chegar à última página, exiba uma mensagem estilizada informando que ele concluiu a leitura.
+
+🟣 Desafio 20: Perfil Gamer com Jogos Favoritos
+O que fazer: Crie uma classe chamada Gamer que gerencie o perfil de um jogador.
+O construtor deve receber o nome e o nick (apelido do jogador).
+Adicione um atributo de instância que armazene múltiplos jogos favoritos (uma coleção como lista ou dicionário).
+Crie métodos para adicionar novos jogos a essa lista e exiba o perfil completo do jogador com os seus jogos favoritos organizados em ordem alfabética.
+
+🟠 Desafio 21: A Caneta Colorida Inteligente
+O que fazer: Crie uma classe chamada Caneta que interaja de forma rica com o terminal.
+O construtor deve inicializar a cor (que pode ser uma cor correspondente ao terminal) e o atributo tampada (que começa como True).
+Crie os métodos tampar() e destampar().
+Crie um método escrever(mensagem). Se a caneta estiver tampada, o sistema deve impedir a escrita. Se estiver destampada, deve imprimir a mensagem no terminal usando exatamente a cor da caneta.
+Crie um método quebrar_linha(qtd) que insira quebras de linha controladas.
+
+🎛️ Desafio 22: O Simulador de Controle Remoto
+O que fazer: Crie uma classe chamada ControleRemoto que gerencie os comandos de uma televisão.
+Defina atributos para controlar o canal_atual, o volume_atual e o limite de volume (por exemplo, volume máximo = 5).
+Crie métodos comportamentais para subir e descer o volume (respeitando os limites mínimos e máximos) e mudar de canal (para cima ou para baixo).
+Implemente um método de controle principal que receba comandos do usuário (como símbolos ou números) no terminal e acione os métodos correspondentes da televisão.
