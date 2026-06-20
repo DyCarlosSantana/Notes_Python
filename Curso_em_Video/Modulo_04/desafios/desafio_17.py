@@ -10,9 +10,9 @@ class Produto:
     def __init__(self, produto, preco):
         self.produto = produto
         self.preco = preco
-    
+
     def etiqueta_preco(self):
-        etiqueta = Panel(title="Bruna")
+        etiqueta = Panel("Conteudo", title="Produto")
         return etiqueta
 
 p1 = Produto("Iphone 15 Pro Max", 5000)
