@@ -158,4 +158,6 @@ Outros recursos do metodo Console:
 - Impressão formatada: console.print("Olá, [bold magenta]mundo![/bold magenta]") Permite imprimir mensagens formatadas usando tags de estilo e cor
 - Personalização: Console(color_system="windows") Permite personalizar o console, como definir o sistema de cores para compatibilidade com diferentes terminais
 - Integração: O Console do Rich pode ser integrado com outras bibliotecas para exibir mensagens formatadas em diferentes contextos, como logs, testes e interfaces de linha de comando
+
+Geralmente o metodo console é usado para 
 """
