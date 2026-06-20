@@ -27,7 +27,7 @@ Outros recursos do Painel:
 
 # Tabelas: Permite criar tabelas formatadas
 from rich.table import Table
-table = Table()
+table = Table() 
 table.add_column("Nome")
 table.add_column("Idade")
 table.add_row("Alice", "25")
