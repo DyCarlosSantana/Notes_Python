@@ -7,10 +7,13 @@
     Crie um método chamado analisar() que calcule a quantidade total de carne necessária para o evento
     e exiba um resumo completo dos custos estimados.
 """
+from rich.console import Console
 from rich.panel import Panel
 from rich.traceback import install
 install()
+
 class Churrasco:
+    console = Console()
     consumo_padrao = 0.4
     preco_kg = 82.40
 
@@ -31,8 +34,14 @@ class Churrasco:
         return valor_dividido
 
     def analisar(self):
-        msg = Panel(f"Analisando {self.titulo} com {self.quant} pessoas\nCada participante comerá {self.consumo_padrao} e cada kg custa R${self.preco_kg}\nRecomendo comprar {self.quant_carne():.2f} kg de carne, o que custará R${self.total_custo():.2f}\nO valor por pessoa será de R${self.valor_por_pessoa():.2f}")
-        return msg
+        Painel = Panel.fit(
+            f"Analisando [green]{self.titulo}[/] com [blue]{self.quant} convidados[/]\n"
+            f"Cada participante comerá {self.consumo_padrao} e cada kg custa R${self.preco_kg}\n"
+            f"Recomendo [blue]comprar {self.quant_carne():.2f}[/] kg de carne, o que custará [green]R${self.total_custo():.2f}[/]\n"
+            f"O valor por pessoa será de [yellow]R${self.valor_por_pessoa():.2f}[/]",
+            title= f"{self.titulo}"
+            )
+        self.console.print(Painel)
 
-churrasco = Churrasco("Churrasco dos Amigos", 10)
+churrasco = Churrasco("Churrasco com os Amigos", 15)
 print(churrasco.analisar())

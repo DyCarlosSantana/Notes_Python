@@ -23,6 +23,11 @@ Outros recursos do Painel:
 - Estilo de borda: border_style="red" (red, green, blue, yellow, magenta, cyan, white, black)
 - Título: title="Título do Painel"
 - Alinhamento do título: title_align="center" (left, center, right)
+- Os painéis se estenderão por toda a largura do terminal. Você pode ajustar o painel ao conteúdo definindo o valor expand=False no construtor ou criando o painel com ` fit(). Por exemplo:
+EX:
+from rich import print
+from rich.panel import Panel
+print(Panel.fit("Hello, [red]World!"))
 """
 
 # Tabelas: Permite criar tabelas formatadas
