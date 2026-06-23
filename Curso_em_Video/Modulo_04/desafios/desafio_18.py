@@ -29,19 +29,19 @@ class Churrasco:
         valor_total = self.quant_carne() * self.preco_kg
         return valor_total
     
-    def valor_por_pessoa(self):
+    def custo_individual(self):
         valor_dividido = self.total_custo() / self.quant
         return valor_dividido
 
     def analisar(self):
         Painel = Panel.fit(
             f"Analisando [green]{self.titulo}[/] com [blue]{self.quant} convidados[/]\n"
-            f"Cada participante comerá {self.consumo_padrao} e cada kg custa R${self.preco_kg}\n"
+            f"Cada participante comerá {self.__class__.consumo_padrao} e cada kg custa R${self.__class__.preco_kg}\n"
             f"Recomendo [blue]comprar {self.quant_carne():.2f}[/] kg de carne, o que custará [green]R${self.total_custo():.2f}[/]\n"
-            f"O valor por pessoa será de [yellow]R${self.valor_por_pessoa():.2f}[/]",
+            f"O valor por pessoa será de [yellow]R${self.custo_individual():.2f}[/]",
             title= f"{self.titulo}"
             )
         self.console.print(Painel)
 
 churrasco = Churrasco("Churrasco com os Amigos", 15)
-print(churrasco.analisar())
+churrasco.analisar()

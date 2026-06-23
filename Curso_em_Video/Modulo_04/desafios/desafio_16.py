@@ -8,14 +8,15 @@
 from rich import print
 
 class Funcionario:
+    # Atributo de Classe
     empresa = "Drip Art"
     def __init__(self, nome, cargo, setor):
-        self.funcionario = nome
+        self.nome = nome
         self.cargo = cargo
         self.setor = setor
     
-    def Apresentaçao(self):
-        msg = (f":wave::grin: Olá, sou [blue]{self.funcionario}[/], {self.cargo} do setor de {self.setor} da empresa {self.empresa}")
+    def apresentacao(self):
+        msg = (f":wave::grin: Olá, sou [blue]{self.nome}[/], {self.cargo} do setor de {self.setor} da empresa {Funcionario.empresa}") #  OU {self.__class__.empresa}
         return msg
 
 f1 = Funcionario("Edy Carlos", "programador", "TI" )

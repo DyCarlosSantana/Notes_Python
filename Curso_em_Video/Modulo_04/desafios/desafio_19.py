@@ -8,28 +8,31 @@
 """
 from rich.console import Console
 from rich.panel import Panel
+from rich import print
 from rich.traceback import install
 install()
 
 class Livro:
-    def __init__(self, titulo, total_paginas, pagina_atual=0):
+    def __init__(self, titulo, total_paginas, pagina_atual=1):
         self.titulo = titulo
         self.total_paginas = total_paginas
         self.pagina_atual = pagina_atual
 
+        print(f":open_book: Você acabou de abrir o livro [cyan]{self.titulo}[/] que tem [yellow]{self.total_paginas} paginas[/] no total. Você esta na [yellow] pagina {self.pagina_atual}[/]")
+
     def avancar_pagina(self, avancar):
         try:
-            if avancar > self.total_paginas:
+            if self.pagina_atual + avancar > self.total_paginas:
                 return f'O número excede o total de paginas do livro "{self.titulo}"'
             else:
-                self.pagina_atual =+ avancar
+                self.pagina_atual += avancar
                 if self.pagina_atual == self.total_paginas:
                     return f'Leitura de "{self.titulo}" finalizada!'
                 else:
                     return f"Pagina atual atualizada: {self.pagina_atual}"
-        except ValueError:
+        except TypeError:
             return "Digite um NÚMERO do tipo inteiro"
         
 
 livro01 = Livro("Filhos do Éden", 473)
-print(livro01.avancar_pagina(473))
+print(livro01.avancar_pagina(5))

@@ -13,25 +13,21 @@ install()
 class Produto:
     console = Console()
 
-    def __init__(self, produto, preco):
+    def __init__(self, produto:str, preco:float):
         self.produto = produto
         self.preco = preco
 
     def linha(self, tam=30):
         return "-" * tam
     
-    def conteudo(self, variavel_texto):
-        justify_text = f"{variavel_texto:^30}"
-        return justify_text
-    
     def etiqueta_preco(self):
-        etiqueta = Panel.fit(
-            f"{self.conteudo(self.produto)}\n"
-            f"{self.linha()}\n"
-            f"{self.conteudo(f'R${self.preco}')}",
-            title="Produto"
-            )
+        conteudo = f"{self.produto.center(30, ' ')}\n"
+        conteudo += f"{self.linha()}\n"
+        # formatando o preço
+        precof = f"R${self.preco:,.2f}"
+        conteudo += f"{precof.center(30, '.')}"
+        etiqueta = Panel.fit(conteudo, title="Produto")
         self.console.print(etiqueta)
 
-p1 = Produto("Iphone 15 Pro Max", 5000)
-print(p1.etiqueta_preco())
+p1 = Produto("Iphone 15 Pro Max", 5_000.00)
+p1.etiqueta_preco()
