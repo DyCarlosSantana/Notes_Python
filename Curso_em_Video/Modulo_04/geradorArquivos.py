@@ -8,10 +8,10 @@ if not os.path.exists(diretorio):
     print("Novo diretorio criado")
 
 # Define a quantidade de arquivos e o prefixo
-quantidade = 22
+quantidade = 27
 prefixo = "desafio"
 
-for i in range(16, quantidade + 1):
+for i in range(23, quantidade + 1):
     nome_arquivo = f"{prefixo}_{i}.py"
     caminho = os.path.join(diretorio, nome_arquivo)
     with open(caminho, "w", encoding="utf-8") as f:
