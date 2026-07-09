@@ -1,22 +1,26 @@
 # Desafio 25
 from abc import ABC, abstractmethod
-from rich.console import Console
+from rich import print
 from random import randint, choice
+
 class Personagem(ABC):
-    console = Console()
-    def __init__(self, nome, vida):
+    def __init__(self, nome, vida = 1500):
         self.nome = nome
         self.vida = vida
-        self.golpe = "Golpe"
+        self.golpe = []
 
-    def atacar(self, alvo):
-        forca = 100
-        print(f"[magenta]{self.nome}[/]([cyan]{self.vida}[/]) atacou [yellow]{alvo}()[/] com [blue]{self.golpe}[/] de força [cyan]{forca}[/]")
-        self.receber_dano(forca)
+    def atacar(self, alvo, forca = 100):
+        print(f"[magenta]{self.nome}[/]([cyan]{self.vida}[/]) atacou [yellow]{alvo.nome}()[/] com [blue]{self.golpe}[/] de força [cyan]{forca}[/]")
+        alvo.receber_dano(forca)
 
     def receber_dano(self, dano):
-        self.vida -= dano
-        print(f"[blue]{self.nome}[/] recebeu [red]dano de {dano}[/]!")
+        fator = randint(5, dano)
+        self.vida = self.vida - fator
+        if self.vida < 0:
+            self.vida = 0
+            print(f"Gamer Over para {self.nome}!")
+        else:
+            print(f"[blue]{self.nome}[/] recebeu [red]dano de {fator}[/]!")
 
     @abstractmethod
     def curar(self):
@@ -36,7 +40,8 @@ class Guerreiro(Personagem):
 
     def curar(self):
         pontos_cura = randint(30, 100)
-        print(f"{self.nome} tomou uma porção de cura de nivel 1 e [green]recuperou {pontos_cura} pontos[/] de vida")
+        self.vida += pontos_cura
+        print(f"[magenta]{self.nome}[/] tomou uma porção de cura de nivel 1 e [green]recuperou {pontos_cura} pontos[/] de vida")
     
 
 class Mago(Personagem):
@@ -52,4 +57,5 @@ class Mago(Personagem):
 
     def curar(self):
         pontos_cura = randint(30, 100)
-        print(f"{self.nome} usou mágia de cura e [green]recuperou {pontos_cura} pontos[/] de vida")
+        self.vida += pontos_cura
+        print(f"[magenta]{self.nome}[/] usou mágia de cura e [green]recuperou {pontos_cura} pontos[/] de vida")
