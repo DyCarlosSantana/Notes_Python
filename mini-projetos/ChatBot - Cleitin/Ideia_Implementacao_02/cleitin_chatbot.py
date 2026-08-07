@@ -63,6 +63,7 @@ class MeuApp(ctk.CTk):
             self.adicionar_texto_chat("Você", mensagem_entrada) # Exibe o que foi digitado
             self.entrada_texto.delete(0, "end") # Limpa da caixa de entrada
             self.cleitin(mensagem_entrada)
+            # Refazer chamada com threding
 
 
     def capturar_fala(self):
