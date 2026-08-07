@@ -1,4 +1,5 @@
 import os
+import threading
 import customtkinter as ctk
 import speech_recognition as sr 
 from rich.traceback import install
@@ -62,8 +63,7 @@ class MeuApp(ctk.CTk):
         if mensagem_entrada:
             self.adicionar_texto_chat("Você", mensagem_entrada) # Exibe o que foi digitado
             self.entrada_texto.delete(0, "end") # Limpa da caixa de entrada
-            self.cleitin(mensagem_entrada)
-            # Refazer chamada com threding
+            threading.Thread(target=self.cleitin, args=(mensagem_entrada,)).start()
 
 
     def capturar_fala(self):
@@ -81,7 +81,7 @@ class MeuApp(ctk.CTk):
                 self.adicionar_texto_chat("Cleitin", "Nenhuma voz detectada. O microfone foi desligado por inatividade.")
             else:
                 self.adicionar_texto_chat("Você", mensagem_entrada)
-                self.cleitin(mensagem_entrada)
+                threading.Thread(target=self.cleitin, args=(mensagem_entrada,)).start()
 
 
     def cleitin(self, mensagem_entrada):
