@@ -22,7 +22,7 @@ if not chave_api:
 cliente = Groq(api_key=chave_api)
 
 # Indica o caminho para o arquivo que vai ser lido
-path = "ChatBot - Cleitin/Exercicio_04/doc_texto_bagunçado.txt"
+path = "Desenvolvimento_Cleitinho/Exercicio_04/doc_texto_bagunçado.txt"
 if not os.path.exists(path): # Verifica se o caminho existe
     aviso = (f"\n[bold red]--- ERRO: O ficheiro '{path}' não foi encontrado! ---[/bold red]")
     console.print(Panel(aviso, title="AVISO", border_style="red"))

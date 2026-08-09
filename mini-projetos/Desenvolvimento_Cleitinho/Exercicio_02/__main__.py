@@ -13,28 +13,14 @@ chave_api = os.getenv("GROQ_API_KEY")
 
 # Verifica se o .env esta configurado corretamente
 if not chave_api:
-    aviso = ("\n[bold red]--- ERRO: Chave da API do Groq não encontrada! ---[/bold red]")
+    aviso = ("\n[bold red]❌ ERRO: Chave da API do Groq não encontrada![/bold red]")
     painel_aviso_falha = Panel(aviso, title="AVISO", border_style="red", width=80)
     console.print(painel_aviso_falha)
     exit()
 
 cliente = Groq(api_key=chave_api)
-
-# Indica o caminho para o arquivo que vai ser lido
-path = "ChatBot - Cleitin/Exercicio_03/doc_aleatorio.txt"
-if not os.path.exists(path): # Verifica se o caminho existe
-    aviso = (f"\n[bold red]--- ERRO: O ficheiro '{path}' não foi encontrado! ---[/bold red]")
-    console.print(Panel(aviso, title="AVISO", border_style="red"))
-    exit()
-else:
-    aviso = (f"[green]--- Ficheiro '{path}' carregado com sucesso ---[/]")
-    console.print(Panel(aviso, title="Anexo", border_style="green"))
-    with open(path, 'r', encoding="utf-8") as f:
-        conteudo_ficheiro = f.read()
-
 ## Já inicializamos com a "personalidade"
-historico_mensagens = [
-    {"role": "system", "content": f"Seu nome é Cleitin, um assistente de produtividade que processa ficheiros locais, analise o seguinte ficheiro anexado: {conteudo_ficheiro}"}]
+historico_mensagens = [{"role": "system", "content": "Seu nome é Cleitinho, um mentor programação Python muito didático"}]
 
 while True:
     try:
@@ -53,7 +39,7 @@ while True:
         # Guarda a resposta da IA no histórico com a role 'assistant' para o próximo turno
         historico_mensagens.append({"role": "assistant", "content": resposta_da_ia})
 
-        painel_resposta = Panel(resposta_da_ia, title="Cleitin (ChatBot):", subtitle="Digite 'sair' para encerrar a sessão", border_style="green", width=80)
+        painel_resposta = Panel(resposta_da_ia, title="Resposta (Groq):", subtitle="Digite 'sair' para encerrar a sessão", border_style="green", width=80)
         console.print(painel_resposta)
 
     except Exception as e:

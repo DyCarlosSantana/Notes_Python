@@ -1,4 +1,4 @@
-from cleitin_chatbot import MeuApp
+from Interface import MeuApp
 from rich.traceback import install
 install()
 

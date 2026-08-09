@@ -25,7 +25,8 @@ if not chave_api:
 
 cliente = Groq(api_key=chave_api)
 ## Já inicializamos com a "personalidade"
-historico_mensagens = [{"role": "system", "content": "Seu nome é Cleitin, um mentor programação Python muito didático"}]
+historico_mensagens = [{"role": "system", "content": "Seu nome é Cleitinho, um mentor programação Python muito didático"}]
+
 
 # Intanciando o Recognizer - Conjunto de configurações
 rec = sr.Recognizer()
