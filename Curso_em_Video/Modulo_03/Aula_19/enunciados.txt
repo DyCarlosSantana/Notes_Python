@@ -1,0 +1,33 @@
+🏆 Desafios de Programação: Aula 19 (Dicionários)
+
+Os desafios agora envolvem lógica de organização e extração de dados complexos.
+
+🟢 Exercício 90: Dicionário em Python
+
+O que fazer: Faça um programa que leia nome e média de um aluno, guardando também a situação (Aprovado/Reprovado) num dicionário. No final, mostre o conteúdo da estrutura no ecrã.
+
+🟡 Exercício 91: Jogo de Dados em Python
+
+O que fazer: Crie um programa onde 4 jogadores joguem um dado e tenham resultados aleatórios. Guarde esses resultados num dicionário em Python. No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o maior número no dado.
+Dica do Cleitin: Vais precisar de usar o itemgetter da biblioteca operator para ordenar o dicionário.
+
+🔴 Exercício 92: Cadastro de Trabalhador em Python
+
+O que fazer: Crie um programa que leia nome, ano de nascimento e carteira de trabalho e registe-os (com idade) num dicionário. Se por acaso a CTPS for diferente de ZERO, o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa se vai aposentar.
+
+🔵 Exercício 93: Cadastro de Jogador de Futebol
+
+O que fazer: Crie um programa que gira o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de gols feitos em cada partida. Tudo isso será guardado num dicionário, incluindo o total de gols feitos durante o campeonato.
+
+🟣 Exercício 94: Unindo Dicionários e Listas
+
+O que fazer: Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os dados de cada pessoa num dicionário e todos os dicionários numa lista. No final, mostre:
+
+Quantas pessoas foram cadastradas.
+A média de idade.
+Uma lista com as mulheres.
+Uma lista com as pessoas com idade acima da média.
+
+🟠 Exercício 95: Aprimorando o Cadastro de Jogador de Futebol
+
+O que fazer: Aprimore o desafio 93 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.

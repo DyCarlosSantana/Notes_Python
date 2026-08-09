@@ -1,0 +1,20 @@
+💪 Desafio: Sistema de Avaliação Física
+Contexto: Você está modelando, para seu negócio de protocolos de treino, um pequeno sistema que avalia diferentes tipos de avaliação física de clientes.
+Requisitos:
+
+Crie uma classe abstrata AvaliacaoFisica com:
+
+Atributos: nome_cliente, data_avaliacao
+Um método abstrato gerar_resultado() — cada tipo de avaliação calcula o resultado de um jeito diferente
+Um método concreto resumo() que retorna uma string com nome e data (esse não é abstrato — todas as subclasses usam igual)
+
+
+Crie duas subclasses concretas que herdam de AvaliacaoFisica:
+
+AvaliacaoIMC: recebe peso e altura, e gerar_resultado() calcula o IMC e retorna também uma classificação textual (ex: "Peso normal", "Sobrepeso") — você decide as faixas
+
+AvaliacaoComposicaoCorporal: recebe peso, percentual_gordura, e gerar_resultado() calcula a massa magra (peso * (1 - percentual_gordura/100))
+
+
+Crie uma lista com 3 avaliações de clientes diferentes (misturando os dois tipos) e percorra com um for, chamando resumo() e gerar_resultado() de cada uma — sem precisar saber de qual subclasse é cada objeto (esse é o gostinho do que vem depois: Polimorfismo).
+Bônus (opcional, pra ir além): tente instanciar AvaliacaoFisica diretamente e confirme que dá erro — isso prova que sua abstração está correta.

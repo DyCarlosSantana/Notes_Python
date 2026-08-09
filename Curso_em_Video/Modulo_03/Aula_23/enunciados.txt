@@ -1,0 +1,23 @@
+Desafios de Programação: Aula 23 (Erros e Exceções)
+    Estes são os desafios finais do Mundo 3 do Curso em Vídeo. Eles vão exigir que uses todo o teu conhecimento acumulado de estruturas condicionais, repetições, listas, dicionários, funções, módulos e, agora, tratamento de erros.
+
+🟢 Exercício 113: Funções de Leitura Robustas
+    O que fazer: Reescreva a função leiaInt() que fizemos no Exercício 104, incluindo agora a possibilidade da digitação de um número de tipo inválido. Aproveite e crie também uma função chamada leiaFloat() com a mesma funcionalidade.
+    - Dica do Cleitin: Usa um loop while True e blocos try/except para lidar com ValueError e KeyboardInterrupt.
+
+🟡 Exercício 114: Verificação de Acessibilidade de Site
+    O que fazer: Crie um código em Python que teste se o site Pudim (pudim.com.br) está acessível pelo computador usado.
+    - Dica do Cleitin: Vais precisar de importar a biblioteca standard urllib.request.
+
+🔴 Exercício 115 (A, B e C): Projeto do Mini-Sistema de Cadastro
+Este é o projeto de encerramento do curso! Ele é dividido em três partes e simula um sistema profissional de terminal com armazenamento em ficheiro de texto (.txt).
+-> Exercício 115a: Criando o Menu de Opções
+    Crie um sistema com um menu principal estilizado no terminal, permitindo escolher entre:
+    - Ver pessoas cadastradas.
+    - Cadastrar nova pessoa.
+    - Sair do sistema. A entrada do menu deve ser protegida por tratamento de erros.
+-> Exercício 115b: Arquivando Dados
+    Ao escolher a opção 1, o sistema deverá ler e mostrar o conteúdo de um ficheiro de texto chamado cursoemvideo.txt. Se o ficheiro não existir, o sistema deve criá-lo automaticamente.
+-> Exercício 115c: Inserindo Dados no Arquivo
+    Ao escolher a opção 2, o programa deve solicitar o nome e a idade da nova pessoa e gravá-los no ficheiro cursoemvideo.txt. Garanta que a idade seja validada pelo tratamento de erros.
+    
