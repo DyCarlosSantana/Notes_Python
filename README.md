@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Sobre o repositório
+## Sobre o repositório
 
 Este repositório funciona como um **caderno de estudos**: reúne exercícios, desafios e pequenos projetos desenvolvidos durante cursos e práticas autônomas em Python. Não é um tutorial nem uma biblioteca pronta para uso — é o registro da evolução técnica, desde lógica de programação até tópicos mais avançados como orientação a objetos, manipulação de arquivos, automação e integração com APIs.
 
@@ -12,7 +12,7 @@ Por natureza, o conteúdo **cresce e muda com frequência**: novas aulas, desafi
 
 ---
 
-## 📁 Estrutura geral
+## Estrutura geral
 
 O repositório é organizado em três grandes frentes de estudo:
 
@@ -29,7 +29,7 @@ Projetos autorais e independentes, não vinculados a nenhum curso específico. �
 
 ---
 
-## 🛠️ Tecnologias e bibliotecas
+## Tecnologias e bibliotecas
 
 O núcleo do repositório é **Python puro**, mas diversos exercícios e projetos exploram bibliotecas externas, entre elas:
 
@@ -45,7 +45,7 @@ Essa lista tende a se expandir conforme novos projetos são adicionados — não
 
 ---
 
-## 🧭 Como navegar
+## Como navegar
 
 - **Para acompanhar a evolução cronológica do aprendizado:** comece por `Curso_em_Video/Modulo_01` e avance pelos módulos em ordem.
 - **Para ver aplicações práticas e scripts pontuais:** explore `Hashtag/`.
@@ -55,7 +55,7 @@ Cada pasta de aula ou projeto é autocontida — em geral, basta abrir o arquivo
 
 ---
 
-## ⚙️ Executando os scripts
+## Executando os scripts
 
 A maioria dos arquivos é independente e pode ser executada diretamente:
 
@@ -81,6 +81,6 @@ Este repositório está sob a licença **MIT** — veja o arquivo [`LICENSE`](./
 
 ---
 
-## ✍️ Autor
+## Autor
 **Edy Carlos de Santana Souza**
 [GitHub: @DyCarlosSantana](https://github.com/DyCarlosSantana)
