@@ -6,7 +6,7 @@
 
 ## 🎯 Sobre o repositório
 
-Este repositório funciona como um **caderno de estudos vivo**: reúne exercícios, desafios e pequenos projetos desenvolvidos durante cursos e práticas autônomas em Python. Não é um tutorial nem uma biblioteca pronta para uso — é o registro da evolução técnica do autor, desde lógica de programação até tópicos mais avançados como orientação a objetos, manipulação de arquivos, automação e integração com APIs.
+Este repositório funciona como um **caderno de estudos**: reúne exercícios, desafios e pequenos projetos desenvolvidos durante cursos e práticas autônomas em Python. Não é um tutorial nem uma biblioteca pronta para uso — é o registro da evolução técnica, desde lógica de programação até tópicos mais avançados como orientação a objetos, manipulação de arquivos, automação e integração com APIs.
 
 Por natureza, o conteúdo **cresce e muda com frequência**: novas aulas, desafios e projetos são adicionados continuamente conforme o aprendizado avança. Por isso, este README descreve a *estrutura e o propósito* de cada área, em vez de listar arquivos específicos — assim ele continua válido mesmo quando novo conteúdo é incluído.
 
@@ -82,6 +82,5 @@ Este repositório está sob a licença **MIT** — veja o arquivo [`LICENSE`](./
 ---
 
 ## ✍️ Autor
-
 **Edy Carlos de Santana Souza**
 [GitHub: @DyCarlosSantana](https://github.com/DyCarlosSantana)
